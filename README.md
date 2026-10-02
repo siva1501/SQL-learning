@@ -174,7 +174,7 @@ I am currently practicing SQL using **MySQL**.
 * [x] SQL Basics
 * [x] SQL Constraints
 * [x] Filtering & Sorting
-* [ ] SQL Functions
+* [x] SQL Functions
 * [ ] Grouping
 * [ ] SQL Joins
 * [ ] Subqueries
