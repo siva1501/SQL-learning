@@ -1,3 +1,7 @@
+-- ANY 
+-- ANY means the condition should be true for at least one value returned by the subquery.
+
+
 CREATE DATABASE COMPENY;
 USE COMPENY;
 CREATE TABLE DEPARTMENT(

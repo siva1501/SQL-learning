@@ -1,3 +1,7 @@
+-- ALL
+-- ALL means the condition should be true for every value returned by the subquery.
+
+
 CREATE DATABASE COMPENY;
 USE COMPENY;
 CREATE TABLE DEPARTMENT(

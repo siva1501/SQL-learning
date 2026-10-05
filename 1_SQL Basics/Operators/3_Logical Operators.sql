@@ -1,0 +1,39 @@
+-- Logical Operators
+-- Used to combine multiple conditions.
+
+CREATE DATABASE COMPENY;
+USE COMPENY;
+CREATE TABLE EMPLOYEES(
+	EMPLOYEE_ID INT ,
+	NAME VARCHAR(100),
+	DEPARTMENT_ID INT,
+	CITY VARCHAR(100),
+	SALARY INT);
+INSERT INTO EMPLOYEES
+VALUES
+(1,'SIVA',1,'HYD',40000),
+(2,'RAVI',2,'KHMM',50000),
+(3,'NAAEEN',3,'SPL',45000),
+(4,'MAHI',3,'SPL',60000),
+(5,'NANI',1,'KHMM',65000);
+
+-- AND
+-- Both conditions must be true.
+SELECT * 
+FROM EMPLOYEES
+WHERE CITY='KHMM'
+AND SALARY>50000;
+
+-- OR
+-- At least one condition must be true.
+SELECT *
+FROM EMPLOYEES
+WHERE CITY = 'SPL'
+OR CITY='KHMM';
+
+
+-- NOT
+-- Reverses a condition.
+SELECT *
+FROM EMPLOYEES
+WHERE NOT CITY = 'SPL';
