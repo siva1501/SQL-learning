@@ -1,0 +1,43 @@
+-- Correlated Subquery
+-- A correlated subquery is different from a normal subquery.
+-- The subquery depends on the current row of the outer query.
+-- Outer query gets one row
+--         ↓
+-- Subquery checks that row
+--         ↓
+-- Result is returned
+--         ↓
+-- Outer query moves to next row
+--         ↓
+-- Subquery runs again
+
+CREATE DATABASE COMPENY;
+USE COMPENY;
+CREATE TABLE EMPLOYEES(
+	EMPLOYEE_ID INT ,
+    NAME VARCHAR(100),
+    DEPARTMENT_ID INT,
+    SALARY INT);
+INSERT INTO EMPLOYEES
+VALUES
+(1,'SIVA',1,40000),
+(2,'RAVI',2,50000),
+(3,'NAAEEN',3,45000),
+(4,'MAHI',3,60000),
+(5,'NANI',1,65000);
+
+SELECT E.NAME,E.SALARY,E.DEPARTMENT_ID
+FROM EMPLOYEES E
+WHERE E.SALARY = (
+	SELECT AVG (E2.SALARY)
+    FROM EMPLOYEES E2
+    WHERE E2.DEPARTMENT_ID=E.DEPARTMENT_ID
+    );
+    
+SELECT e.name, e.salary, e.department_id
+FROM employees e
+WHERE e.salary > (
+    SELECT AVG(e2.salary)
+    FROM employees e2
+    WHERE e2.department_id = e.department_id
+);

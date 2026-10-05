@@ -26,3 +26,5 @@ RIGHT JOIN DEPARTMENT
 ON STUDENT.DEPARTMENT_ID=DEPARTMENT.DEPARTMENT_ID;
 
 -- Django is included because it exists in the right table, even though there is no student with department ID 105.
+-- LEFT JOIN keeps everything from the left table.
+-- RIGHT JOIN keeps everything from the right table.
