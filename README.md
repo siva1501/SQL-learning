@@ -181,8 +181,8 @@ I am currently practicing SQL using **MySQL**.
 * [x] Set Operations
 * [x] Database Modification
 * [x] Advanced SQL
-* [ ] Database Design
-* [ ] Advanced Query Concepts
+* [x] Database Design
+* [x] Advanced Query Concepts
 
 ---
 
