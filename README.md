@@ -177,10 +177,10 @@ I am currently practicing SQL using **MySQL**.
 * [x] SQL Functions
 * [x] Grouping
 * [x] SQL Joins
-* [ ] Subqueries
-* [ ] Set Operations
-* [ ] Database Modification
-* [ ] Advanced SQL
+* [x] Subqueries
+* [x] Set Operations
+* [x] Database Modification
+* [x] Advanced SQL
 * [ ] Database Design
 * [ ] Advanced Query Concepts
 
