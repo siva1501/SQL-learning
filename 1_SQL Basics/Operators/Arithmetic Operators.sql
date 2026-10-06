@@ -1,0 +1,39 @@
+-- Arithmetic Operators
+-- SQL operators are symbols or keywords used to perform operations on data. They are mainly used in WHERE, HAVING, SELECT, JOIN, and other SQL statements.
+CREATE DATABASE COMPENY;
+USE COMPENY;
+CREATE TABLE EMPLOYEES(
+	EMPLOYEE_ID INT ,
+    NAME VARCHAR(100),
+    DEPARTMENT_ID INT,
+    CIYT VARCHAR(100),
+    SALARY INT);
+INSERT INTO EMPLOYEES
+VALUES
+(1,'SIVA',1,'HYD',40000),
+(2,'RAVI',2,'KHMM',50000),
+(3,'NAAEEN',3,'SPL',45000),
+(4,'MAHI',3,'SPL',60000),
+(5,'NANI',1,'KHMM',65000);
+
+
+-- Addition
+SELECT NAME, SALARY, SALARY + 5000 AS new_SALARY
+FROM EMPLOYEES;
+
+-- Subtraction
+SELECT NAME, SALARY, SALARY - 5000 AS new_SALARY
+FROM EMPLOYEES;
+
+
+-- Multiplication
+SELECT NAME, SALARY, SALARY * 2 AS new_SALARY
+FROM EMPLOYEES;
+
+-- Division
+SELECT NAME, SALARY, SALARY/2 AS new_SALARY
+FROM EMPLOYEES;
+
+-- Modulus (remainder)
+SELECT NAME, SALARY, SALARY % 2 AS new_SALARY
+FROM EMPLOYEES;

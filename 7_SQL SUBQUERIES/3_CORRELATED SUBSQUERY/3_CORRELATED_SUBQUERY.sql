@@ -33,11 +33,3 @@ WHERE E.SALARY = (
     FROM EMPLOYEES E2
     WHERE E2.DEPARTMENT_ID=E.DEPARTMENT_ID
     );
-    
-SELECT e.name, e.salary, e.department_id
-FROM employees e
-WHERE e.salary > (
-    SELECT AVG(e2.salary)
-    FROM employees e2
-    WHERE e2.department_id = e.department_id
-);
